@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+
+.navbar{
+ overflow: hidden;
+ background-color: #444343;
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+.navbar a {
+ float: left;
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 10px 20px;
+ text-decoration: none;
+ font-size: 17px;
+}
+.navrg{
+ float: right;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 80px 320px 80px 300px 100px;
+    margin-top: 30px;
+}
+.headers{
+ font-size: 35px;
+ grid-row: 1/2;
+ grid-column: 1/3;
+ text-align: justify;
+ background-color: forestgreen;
+ color: rgb(255, 0, 238);
+ font-family: 'Roboto', Arial, sans-serif;
+}
+.firsthead{
+    grid-column: 1/3;
+    grid-row: 2;
+    font-size: 25px;
+}
+.sechead{
+    grid-column: 1/3;
+    grid-row: 4;
+    font-size: 25px;
+}
+.one{
+    grid-column: 1;
+    grid-row: 3;
+    color: black;
+}
+.two{
+    grid-column: 2;
+    grid-row: 3;
+    color: black;
+    text-align: justify;
+    vertical-align: sub;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .two{
+        overflow-y: scroll;
+    }
+}
+
+.three{
+    grid-column: 1;
+    grid-row: 5/6;
+    font-size: 40px;
+    background-color: #420a8b;
+    position: relative;
+    color: white;
+}
+.four{
+    grid-column: 2;
+    grid-row: 5/6;
+    font-size: 40px;
+    background-color: #420a8b;
+    position: relative;
+    color: white;
+}
+.five{
+    grid-row: -1/-2;
+    grid-column: 1/3;
+    background-color: #6b6b6b;
+}
+p{
+    text-align: center;
+}
+
+</style>
+</head>
+
+<div class="navbar">
+    <a>Дом</a>
+    <a>Новости</a>
+    <a>Контакт</a>
+    <div class="navrg">
+        <a>Поиск</a>
+    </div>
+</div>
+
+<body class = "main">
+
+<main class = "headers">
+<p>ЭТО КРАТКАЯ ИНФОРМАЦИЯ ПРО ОКУнЬ</p>
+</main>
+
+<main class = "firsthead"><p>Кто такой окунь?</p></main>
+<main class = "sechead"><p>Ещё рыбы</p></main>
+
+<main class="one">
+    <img src="image.png" width=100% height=100%>
+</main>
+
+<main class="two">
+    <a>Речно́й о́кунь, или обыкнове́нный окунь (лат. Perca fluviatilis), — вид лучепёрых рыб из рода пресноводных окуней семейства окунёвых (Percidae). Речной окунь широко распространён в пресных водоёмах Европы и Северной Азии (до бассейна Колымы на востоке и водоёмов северных районов Ирана и Афганистана на юге), завезён в Африку, Австралию и Новую Зеландию. Ранее считалось, что ареал речного окуня включает и водоёмы Северной Америки, которые по современным представлениям населяет самостоятельный вид жёлтый окунь (Perca flavescens).
+
+        Речной окунь относится к хищным рыбам. В рационе взрослого окуня значительную долю занимают другие пресноводные рыбы. Речной окунь предпочитает придерживаться равнинных водоёмов, его можно встретить в реках, озёрах, прудах, водохранилищах и даже в солоноватых участках морей. Нерест у речного окуня происходит ранней весной. Самка окуня откладывает икринки в форме длинной (до 1 м) студенистой ленты. Окунь — популярный объект любительского рыболовства, в отдельных водоёмах имеет важное промысловое значение.</a>
+</main>
+
+<main class="three">
+    <img src="karas.jpg" style = "position: absolute; top: 30%;left: 15%;" width=70% height=60%>
+    <p>Карась</p>
+</main>
+<main class="four">
+    <img src="shuka.jpg" style = "position: absolute; top: 30%;left: 15%;" width=70% height=60%>
+    <p>Щука</p>
+</main>
+
+<main class = "five">
+    <p>Титры, в которых объясняется концовка</p>
+    <p>Напишите или позвоните, чтобы узнать больше о рыбах</p>
+</main>
+
+
+</body>
+</html>
